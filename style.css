@@ -1,0 +1,289 @@
+/* ERIK MAYILYAN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+header {
+    background-color: #311ae2;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    line-height: 1;
+    color: white;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #353535;
+    background-size: cover;
+    background-position: center;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+header, footer, body, wrapper, article, section {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 10vh;
+    flex-direction: column;
+}
+
+/*-- Pop Up --*/
+
+#pop-up{
+    width: 300px;
+    padding: 10px;
+    background-color: #3b83e6;
+    color: white;
+    border: solid 1px black;
+    box-shadow: 0px 0px 5px yellow, 5px 5px 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#btn-close{
+    margin-left: 120px;
+    margin-top: -30px;
+    font-weight: bold;
+    background-color: inherit;
+    color:inherit;
+    border:solid 1px white;
+    cursor:pointer;
+    pointer-events: all;
+    width: 25px;
+    height: 30px;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-top: 38px;
+}
+
+/* Panels */
+.myself,
+.opponent {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+.total-box{
+    background-color: #15581f;
+    width: 300px;
+    height: 20%;
+    margin-bottom: 210px;
+    padding-top: 5px;
+    margin-left: -20px;
+    border-radius: 40px;
+}
+
+.box-name {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-right: 220px;
+    margin-left: 10px;
+    color: white;
+}
+
+.box-number {
+    text-align: center;
+    font-size: 70px;
+    color: #ffffff;
+    margin-bottom: 195px;
+    margin-left: 180px;
+    margin-top: -70px;
+}
+
+.online { 
+    background-color: #f7f7f7; 
+}
+
+.ongoing {
+    background-color: #1d15ed;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    height: 120px;
+    border-radius: 60px;
+}
+
+.ongoing-name {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.ongoing-number {
+    font-size: 30px;
+}
+
+/* Buttons */
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { 
+    font-weight: 600; 
+}
+
+button:hover i { 
+    margin-right: 20px; 
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Specific buttons */
+
+.btn-new { 
+    top: 475px;
+}
+.btn-roll-dice { 
+    top: 393px;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    margin-top: 10px;
+    transition: backround-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-new {
+    background-color: blue;
+    color: #ffff;
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.btn-roll-dice {
+    background-color: blue;
+    color: #ffff;
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.btn-roll-dice:link,
+.btn-roll-dice:visited {
+    border: 1px solid #031fb9;
+    color: #031fb9;
+    margin-left: 10px;
+}
+
+.btn-new:hover,
+.btn-new:active {
+    border: 1px solid #c3c3c3;
+    background-color: black;
+}
+
+.btn-roll-dice:hover,
+.btn-roll-dice:active {
+    border: 1px solid #c3c3c3;
+    color: #f8f8f8;
+    background-color: black;
+}
+
+/*-- Winner --*/
+
+.winner { 
+    background-color: #f7f7f7; 
+}
+.winner .player-name { 
+    font-weight: 300; 
+    color: #EB4D4D; 
+}
+
+/* Dice images */
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 95px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+#dice1 { 
+    top: 230px; 
+    left: 130px;
+}
+#dice2 { 
+    top: 230px; 
+    left: 330px;
+}
+
+#dice3 {
+    top: 230px;
+    left: 580px;
+}
+
+#dice4 {
+    top: 230px;
+    left: 780px;
+}
+
+footer {
+    color: yellow;
+    margin-top: 700px;
+    background-color: blue;
+    height: 150px;
+}
+
+.lastpart {
+    padding-top: 50px;
+    padding-left: 70px;
+}

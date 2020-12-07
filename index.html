@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+        Author: Erik Mayilyan
+        Date: 2020-12-06
+        -->
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Dice Roll Game Project</title>
+    </head>
+    <body>
+        <header>
+            <h1>The Final Project by Erik Mayilyan (COMP 2132)</h1>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="myself online">
+                    <div class="total-box">
+                        <div class="box-name" id="name-0">YOU</div>
+                        <div class="box-number" id="number-0">61</div>
+                    </div>    
+                    <div class="ongoing">
+                        <div class="ongoing-name">YOUR SCORE</div>
+                        <div class="ongoing-number" id="ongoing-0">27</div>
+                    </div>
+                </div>
+                <div class="opponent">
+                    <div class="total-box">
+                        <div class="box-name" id="name-1">OPPONENT</div>
+                        <div class="box-number" id="number-1">87</div>
+                    </div>    
+                    <div class="ongoing">
+                        <div class="ongoing-name">OPPONENT'S SCORE</div>
+                        <div class="ongoing-number" id="ongoing-1">0</div>
+                    </div>
+                </div>
+                <div class="buttons-group">
+                    <button class="btn-new">New game</button>
+                    <button class="btn-roll-dice">Roll dice</button>
+                </div>  
+                
+                <div class="winner" type="text" id="winningScore">
+                    <div id="pop-up">
+                        <h2>Dear, Player</h2>
+                        <button id="btn-close">&#10005;</button>
+                        <p>GAME OVER</p>
+                        <p>This game is over. You can click on "NEW GAME" button to start rolling dice again.</p>
+                    </div>
+                </div>
+                
+                <img src="dice-5.png" alt="Dice" class="dice" id="dice1">
+                <img src="dice-5.png" alt="Dice" class="dice" id="dice2">
+                <img src="dice-5.png" alt="Dice" class="dice" id="dice3">
+                <img src="dice-5.png" alt="Dice" class="dice" id="dice4">
+            </div>
+        </main> 
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+    <footer>
+        <div class="lastpart">
+            <h3>Dice game by Erik Mayilyan (COMP 2132)</h3>
+        </div>
+    </footer>
+</html>
