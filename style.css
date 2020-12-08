@@ -30,7 +30,7 @@ body {
     color: #555;
 }
 
-header, footer, body, wrapper, article, section {
+header, footer, body, wrapper {
     display: block;
     max-width: 900px;
     margin: 0 auto;
@@ -237,12 +237,8 @@ button:focus {
     background-color: black;
 }
 
-/*-- Winner --*/
-
 .winner { 
     background-color: #f7f7f7; 
-}
-.winner .player-name { 
     font-weight: 300; 
     color: #EB4D4D; 
 }

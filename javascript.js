@@ -1,4 +1,6 @@
-var onlineUser, prevDiceRoll, gamePlaying;
+/*-- Erik Mayilyan --*/
+
+var gamePlaying;
 var counter = 0;
 var currentScore = [0, 0];
 var totalScore = [0, 0];
@@ -68,7 +70,6 @@ document.querySelector('.btn-new').addEventListener('click', init);
 function init() {
 
   gamePlaying = true;
-  onlineUser = 0;
   totalScore[0] = 0;
   totalScore[1] = 0;    
 
